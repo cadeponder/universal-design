@@ -16,22 +16,30 @@ h1 {
   color: white;
   text-align: center;
   font-family: 'DM Serif Display', serif;
-  font-size: 35px;
+  font-size: 70px;
 }
 
 h2 {
   color: #FFEA00;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
 }
 
 p {
   color: #F2E8E1;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
 }
 li {
+  margin-top: 15px;
   color: #F2E8E1;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 h3 {
