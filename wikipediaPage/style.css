@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: left;
+}
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: #FFEA00;
+}
+
+p {
+  color: #F2E8E1;
+}
+li {
+  color: #F2E8E1;
+}
+
+h3 {
+  color: #F43F21;
+}
+
+a {
+  color: #F2E8E1;
+}
+
+#content {
+  padding-top: 8%;
+}
