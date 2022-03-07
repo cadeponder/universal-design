@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Accessible New Member Intake Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<section>
+  <h1>New Member Intake Form</h1>
+  <h2>This form is for new members of an organization to fill out when signing up.</h2>
+  <form class="" action="#" method="post">
+    <fieldset>
+        <legend>Information for the Form</legend>
+
+        <label for="name">
+        Please input your name.
+        <input type="text" id="name" required>
+        </label>
+
+        <label for="email">
+        Optionally, input your CU email.
+        <input type="email" id="email">
+        </label>
+
+        <label for="social">
+        Optionally, input your website or social media handles.
+        <input type="url" id="social">
+        </label>
+
+        <label for="phone">
+        Optionally, input your phone number.
+        <input type="tel" id="phone" minlength="7">
+        </label>
+
+        <label for="year">
+        Optionally, input your school year.
+        <input type="number" id="year">
+        </label>
+
+        <label for="referral">
+        Optionally, you can add who introduced you to this organization.
+        <input type="text" id="referral">
+        </label>
+
+        <label for="allergies">
+        Optionally, input any food allergies you may have.
+        <input type="text" id="allergies">
+        </label>
+
+        <label for="password">
+        Please confirm your password.
+        <input type="text" id="password" maxlength="20" minlength="5" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+!=]).*" required>
+        <ul class="inputRequirements">
+          <li>Password must be at least 5 characters and contain at least 1 each of the following: uppercase, lowercase, number and symbol</li>
+        </ul>
+        </label>
+        <div id="submit">
+        <input type="submit">
+      </div>
+    </fieldset>
+  </form>
+</section>
+</body>
+</html>
