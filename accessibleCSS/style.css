@@ -1,0 +1,89 @@
+img {
+  max-width: 50%;
+  max-height: auto;
+}
+
+body {
+  background: grey;
+}
+
+p{
+  display: block;
+}
+
+header,
+footer {
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgb(175, 222, 176);
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns:
+   1fr       2fr       1fr;
+  grid-template-areas:
+  "header     header    header"
+  "nav       nav      nav"
+  "aside1    main     aside2"
+  "aside1    main     aside2"
+  "aside1    main     aside2"
+  "footer    footer   footer";
+}
+
+header {grid-area: header; background:rgb(254, 218, 175);}
+nav {grid-area: nav; background:rgb(232, 206, 236);}
+main {grid-area: main; background: rgb(240, 234, 182); max-height: 100%;}
+#aside1 {grid-area: aside1; background: rgb(241, 202, 174);}
+#aside2 {grid-area: aside2; background: rgb(191, 226, 246);}
+footer {grid-area: footer; background: rgb(171, 171, 171);}
+
+nav ul {
+list-style: none;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-around;
+}
+
+/* @media screen
+  and (min-width: 641px)
+  and (max-width: 900px)  {
+.container {
+grid-template-columns:
+   1fr 1fr;
+grid-template-areas:
+  "header header"
+  "nav nav"
+  "main main"
+  "aside1 aside2"
+  "footer footer";
+}
+} */
+
+@media screen
+  and (max-width: 580px)  {
+.container {
+grid-template-columns:
+   1fr;
+grid-template-areas:
+  "header"
+  "main"
+  "nav"
+  "aside1"
+  "aside2"
+  "footer";
+}
+nav ul {
+  flex-flow: column nowrap;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  /* padding: 10px 5px;
+  margin: 5px;
+  /* border: 1px black solid; */ */
+
+  }
+}
