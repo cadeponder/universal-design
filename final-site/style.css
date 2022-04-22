@@ -1,0 +1,45 @@
+/* make all the text TOO small/inaccessible unless enlarged text is used */
+body {
+  outline-style: solid;
+  outline-width: thin;
+}
+header {
+  background: yellow;
+  outline-style: solid;
+  outline-width: thin;
+}
+header h1 {
+  outline-style: solid;
+  outline-width: thin;
+}
+header h2 {
+  outline-style: solid;
+  outline-width: thin;
+}
+nav {
+  background: orange;
+  outline-style: solid;
+  outline-width: thin;
+}
+article {
+  background: red;
+  outline-style: solid;
+  outline-width: thin;
+}
+article header {
+  background-color: pink;
+  outline-style: solid;
+  outline-width: thin;
+}
+article p {
+  outline-style: solid;
+  outline-width: thin;
+}
+/*media queries*/
+@media only screen and (min-width: 481 px){
+/*for tablets*/
+}
+
+@media only screen and (min-width: 769px){
+
+}
