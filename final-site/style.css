@@ -14,7 +14,7 @@
      margin:0;
      padding:0;
      /* overflow-x: hidden; */
-     font-size: 14pt;
+     /* font-size: 14pt; */
  }
 
 body {
@@ -34,7 +34,12 @@ p {
   font-size: 14pt;
 
 }
-
+li a{
+  font-size: inherit;
+}
+article a{
+  font-size: inherit;
+}
 /* HEADER STYLING */
 h1 {
   color: #8EF6D4;
@@ -43,6 +48,7 @@ h3 {
   color: #353B3A;
   font-size: 15pt;
 }
+
 
 header {
   background: #353B3A ;
@@ -136,8 +142,6 @@ ol {
 }
 
 article {
-  /* outline-style: solid;
-  outline-width: thin; */
   padding: 10px;
 }
 article header {
@@ -233,6 +237,9 @@ b{
     position: absolute;
   }
 
+  .dropdown-content a{
+    font-size: 2vw;
+  }
 }
 /*DESKTOP*/
 @media only screen and (min-width: 769px){
@@ -312,6 +319,9 @@ header h2 {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 2vw;
+}
+.dropdown-content a{
+  font-size: 1.5vw;
 }
 
 /* DIV classes
