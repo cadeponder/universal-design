@@ -1,45 +1,225 @@
 /* make all the text TOO small/inaccessible unless enlarged text is used */
+/* COLOR CODES*
+*1- 8EF6D4 - pop color cyan
+*2- D0E8E4 - lightest grey/ 'white'
+*3 -8E9E9B - medium grey
+*4 - 5D6664 - dark grey
+*5 - 353B3A - 'black'
+
+-1+5 contrast for reg + large text //H1 + H2?
+-2+5 contrast for reg + large text
+-
+ */
+
+ *{
+     margin:0;
+     padding:0;
+     overflow-x: hidden;
+     font-size: 14pt;
+ }
+
 body {
-  outline-style: solid;
-  outline-width: thin;
+  /* outline-style: solid;
+  outline-width: thin; */
+  background: #F3F9F2;
+  color: #353B3A;
+
 }
-header {
-  background: yellow;
-  outline-style: solid;
-  outline-width: thin;
+a {
+  color: #508A76;
+  font-size: 14pt;
 }
-header h1 {
-  outline-style: solid;
-  outline-width: thin;
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14pt;
+
 }
-header h2 {
-  outline-style: solid;
-  outline-width: thin;
+/* HEADER STYLING */
+h1 {
+  color: #8EF6D4;
 }
-nav {
-  background: orange;
-  outline-style: solid;
-  outline-width: thin;
-}
-article {
-  background: red;
-  outline-style: solid;
-  outline-width: thin;
-}
-article header {
-  background-color: pink;
-  outline-style: solid;
-  outline-width: thin;
-}
-article p {
-  outline-style: solid;
-  outline-width: thin;
-}
-/*media queries*/
-@media only screen and (min-width: 481 px){
-/*for tablets*/
+h3 {
+  color: #F3F9F2;
+  font-size: 15pt;
 }
 
+header {
+  background: #353B3A;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+header h1 {
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* outline-style: solid;
+  outline-width: thin; */
+  font-size: 10vw;
+  letter-spacing: 1px;
+}
+header h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  /* display: inline-block;
+  outline-style: solid;
+  outline-width: thin; */
+  color: #F3F9F2;
+  font-size: 5vw;
+}
+
+
+nav {
+  text-align: left;
+  /* background: orange; */
+  /* outline-style: solid;
+  outline-width: thin; */
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+ .navBar ul {
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 1px;
+}
+/* HOVER ONLY WORKS FOR WEB, FIGURE OUT MOBILE EQUIV */
+/* .navBar li:hover {
+  background: #8E9E9B;
+} */
+ .navBar li {
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: rgb(142,158,155,0.8);
+  padding: 5px;
+}
+ .navBar li a {
+  font-size: 3.4vw;
+  padding: 10px;
+  display:block;
+  width: 100%;
+  color: #353B3A;
+  text-decoration: none;
+  font-size: 14pt;
+}
+/* ^CAN DELETE ONCE FIXED? */
+
+h5{
+  font-weight: 500;
+}
+.navBar h4{
+  display: none;
+}
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+ol {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+li {
+  font-size: 16pt;
+  padding-bottom: 10px;
+}
+
+
+article {
+  /* outline-style: solid;
+  outline-width: thin; */
+  padding: 10px;
+}
+article header {
+  border-top-right-radius: 100px;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  padding-left: 5px;
+  padding-right:10px;
+  text-align: left;
+}
+article p {
+  padding-left: 5px;
+  padding-right: 5px;
+  /* outline-style: solid;
+  outline-width: thin; */
+}
+
+
+/*media queries*/
+/*DESKTOP*/
 @media only screen and (min-width: 769px){
+header h1{
+  text-align: center;
+}
+header h2{
+text-align: center;
+}
+article p{
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+nav {
+  text-align: center;
+}
+.navBar h4 {
+  font-size: 25pt;
+  padding-bottom: 25px;
+}
+p {
+
+  font-size: 18pt;
+}
+article{
+  padding: 0;
+  padding-bottom:5vw;
+}
+article header{
+border-top-right-radius: 0px;
+margin: 0;
+padding-top: 2vw;
+padding-bottom: 2vw;
+text-align: center;
+}
+h3{
+  font-size: 25pt;
+}
+.navBar li a{
+  font-size: 20pt;
+}
+ul{
+  padding-left: 23vw;
+  padding-right: 23vw;
+}
+ol {
+  padding-left: 23vw;
+  padding-right: 23vw;
+}
+a {
+  font-size: 18pt;
+}
+b{
+  font-size: 18pt;
+}
+em{
+  font-size: 18pt;
+}
+
+/* DIV classes
+header
+navBar
+main
+ */
 
 }
