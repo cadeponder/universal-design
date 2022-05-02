@@ -35,6 +35,7 @@ p {
   font-size: 14pt;
 
 }
+
 /* HEADER STYLING */
 h1 {
   color: #8EF6D4;
@@ -45,7 +46,7 @@ h3 {
 }
 
 header {
-  background: #353B3A;
+  background: #353B3A ;
   padding-bottom: 5px;
   padding-top: 5px;
 }
@@ -135,7 +136,19 @@ li {
   padding-bottom: 10px;
 }
 
+.navBar li:hover {
+  background-color: #353B3A;
+}
+.navBar li a:hover{
+  color: #F3F9F2;
+}
 
+li.active {
+    background-color: #353B3A ;
+}
+li a.active {
+  color: #8EF6D4;
+}
 article {
   /* outline-style: solid;
   outline-width: thin; */
@@ -155,9 +168,25 @@ article p {
   /* outline-style: solid;
   outline-width: thin; */
 }
-
-
+b{
+  font-size: inherit;
+}
+#moralArg b {
+ font-size: 5vw;
+}
 /*media queries*/
+/* TABLET */
+@media only screen and (min-width: 486px){
+  nav {
+    text-align: center;
+  }
+  .navBar li a {
+    font-size: 3.7vw;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+}
 /*DESKTOP*/
 @media only screen and (min-width: 769px){
 header h1{
@@ -178,7 +207,6 @@ nav {
   padding-bottom: 25px;
 }
 p {
-
   font-size: 18pt;
 }
 article{
@@ -191,12 +219,13 @@ margin: 0;
 padding-top: 2vw;
 padding-bottom: 2vw;
 text-align: center;
+font-size: 3.5vw;
 }
 h3{
-  font-size: 25pt;
+  font-size: 4vw;
 }
 .navBar li a{
-  font-size: 20pt;
+  font-size: 3vw;
 }
 ul{
   padding-left: 23vw;
@@ -209,11 +238,23 @@ ol {
 a {
   font-size: 18pt;
 }
-b{
-  font-size: 18pt;
+#moralArg b{
+  font-size: 3vw;
 }
 em{
   font-size: 18pt;
+}
+header h1 {
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 5.5vw;
+  padding-right: 2vw;
+}
+header h2 {
+  text-align: left;
+  padding-left: 5.5vw;
+  padding-right: 2vw;
+  padding-bottom: 1vw;
 }
 
 /* DIV classes
